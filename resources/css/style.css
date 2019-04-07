@@ -362,7 +362,13 @@ header {
 
     .container_search-countries {
         top: 70%;
-        left: 18%;
+        left: 22%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .container_search-countries {
+        left: 18%;
     }
 }
