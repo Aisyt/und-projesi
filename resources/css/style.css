@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #6C7888;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------- */
+/*   REUSABLE COMPONENTS  */
+/* -------------------------------------- */
+
+.row {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+[type="search"] {
+    outline: none;
+}
+
+/* --------------- HEADINGS ---------------- */
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 267%;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    letter-spacing: 0;
+   /* line-height: 58px; */
+}
+
+/* --------------- LINKS/BUTTONS ---------------- */
+
+.und_btn:link,
+.und_btn:visited {
+    /* */
+}
+
+.und_btn {
+    font-size: 100%;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.und_btn-source {
+    color: #FFB1A3;
+    top: 21px;
+    display: inline-block;
+    margin-top: 22px;
+}
+
+/* -------------------------------------- */
+/*   HEADER SECTION  */
+/* -------------------------------------- */
+
+.search-site::placeholder, .search-country::placeholder {
+    color: #8692C2;
+}
+
+header {
+    background-color: #051F85;
+    height: 450px;
+    position: relative;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1440px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-top: 40px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 53px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
+    padding: 3px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:focus {
+    border-bottom: 1px solid #fff;
+}
+
+/*
+.search-container {
+    background-color: #19328E;
+    border: none;
+    border-radius: 6px;
+    padding: 0px;
+    width: 480px;
+    color:#8692C2;
+    font-size: 89%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.search-container .fa-search {
+    position: absolute;
+    left: 15px;
+    color: #fff;
+    z-index: 999;
+    font-size: 80%;
+}
+
+.search-site {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+    margin-left: 25px;
+    width: 95%;
+    color:#8692C2;
+    font-size: 89%;
+    position: relative;
+}
+
+.search-site::placeholder {
+    color: #8692C2;
+}
+*/
+.container_search-countries {
+    position: absolute;
+    width: 1440px;
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.search-flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-between;
+	justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 600px;
+}
+
+.search-flex div {
+    background-color: #19328E;
+    border: none;
+    border-radius: 6px;
+    padding: 0px;
+    width: 48%;
+    color:#8692C2;
+    font-size: 89%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-between;
+	justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.search-country {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 20px;
+    margin-left: 25px;
+    width: 95%;
+    color:#8692C2;
+    font-size: 150%;
+    position: relative;
+}
+
+.search-flex .fa-search {
+    position: absolute;
+    left: 15px;
+    color: #fff;
+    z-index: 999;
+    font-size: 100%;
+}
+
+.label-nereden,
+.label-nereye {
+    position: absolute;
+    top: -30px;
+    color: #fff;
+}
+
+
+/* -------------------------------------- */
+/*   MEDIA QUERIES  */
+/* -------------------------------------- */
+
+/* Big tablet to 1200px(widths smallet than the 1140px row */
+@media only screen and (max-width: 1439px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+
+    .container_search-countries {
+        width: 100%;
+        left: 90%
+    }
+
+
+    /* search input - paddingi(div'in) input ile ayarlıyoruz. */
+    .search-country {
+        padding: 15px;
+        margin-left: 30px;
+        font-size: 130%;
+    }
+
+    /* search div */
+    .search-flex div {
+        width: 48%;
+        font-size: 89%;
+    }
+
+}
+
+/* Small tablets to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+    body { font-size: 16px; }
+
+    .search-flex {
+        width: 500px;
+    }
+
+    .container_search-countries {
+        width: 100%;
+        left: 90%
+    }
+
+    /* search input - paddingi(div'in) input ile ayarlıyoruz. */
+    .search-country {
+        padding: 15px;
+        margin-left: 30px;
+        font-size: 120%;
+    }
+
+    /* search div */
+    .search-flex div {
+        width: 48%;
+        font-size: 89%;
+    }
+
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+    body { font-size: 14px; }
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    header {
+        height: 300px;
+    }
+
+    .main-nav { display: none; }
+
+    .hero-text-box {
+        top: 60%;
+    }
+
+    .container_search-countries {
+        top: 62%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search-flex {
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-pack: space-between;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 450px;
+    }
+
+    /* search input - paddingi(div'in) input ile ayarlıyoruz. */
+    .search-country {
+        padding: 15px;
+        margin-left: 30px;
+        font-size: 120%;
+    }
+
+    /* search div */
+    .search-flex div {
+        width: 48%;
+        font-size: 89%;
+        margin-top: 40px;
+    }
+
+    .label-nereden,
+    .label-nereye {
+        position: absolute;
+        top: -20px;
+        color: #fff;
+    }
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+    header {
+        height: 500px;
+    }
+
+    .hero-text-box {
+        top: 35%;
+    }
+
+    .container_search-countries {
+        top: 70%;
+        left: 26%;
+        transform: translate(-50%, -50%);
+    }
+}
