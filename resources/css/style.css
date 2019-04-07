@@ -224,6 +224,44 @@ header {
 }
 
 
+/* Mobile Navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon .fa-bars {
+    font-size: 150%;
+    color: #fff;
+}
+
+.mobile-nav-icon .fa-times {
+    color: #fff;
+    font-size: 170%;
+}
+
+.shift-menu {
+    display: block;
+    background: #000;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0px;
+    bottom: 0;
+    padding: 40px 60px;
+    margin-top: 0 !important;
+}
+
+.shift-menu-icon {
+    z-index: 9999;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
 /* -------------------------------------- */
 /*   MEDIA QUERIES  */
 /* -------------------------------------- */
@@ -303,7 +341,27 @@ header {
         height: 300px;
     }
 
-    .main-nav { display: none; }
+    .main-nav { display: none; } 
+
+    .mobile-nav-icon { display: inline-block; }
+
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px;
+        font-size: 150%;
+    }
 
     .hero-text-box {
         top: 60%;
