@@ -251,8 +251,10 @@ header {
     width: 100%;
     right: 0px;
     bottom: 0;
-    padding: 40px 60px;
+    /* padding: 40px 60px; */
+    text-align: center;
     margin-top: 0 !important;
+
 }
 
 .shift-menu-icon {
@@ -265,7 +267,7 @@ header {
 /* -------------------------------------- */
 /*   SECTION RESULTS  */
 /* -------------------------------------- */
-
+ 
 .section-results {
     margin-top: 50px;
 }
@@ -413,6 +415,12 @@ header {
 
     .main-nav li {
         display: block;
+        margin-top: 25px;
+        margin-right: 10px;
+    }
+
+    .main-nav li:nth-of-type(1) {
+        margin-top: 80px;
     }
 
     .main-nav li a:link,
@@ -420,7 +428,7 @@ header {
         display: block;
         border: 0;
         padding: 10px;
-        font-size: 150%;
+        font-size: 200%;
     }
 
     .hero-text-box {
