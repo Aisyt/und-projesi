@@ -267,7 +267,11 @@ header {
 /* -------------------------------------- */
 
 .section-results {
-    margin-top: 80px;
+    margin-top: 50px;
+}
+
+.result {
+    margin-top: 70px;
 }
 
 .title-result {
@@ -298,11 +302,19 @@ header {
     font-family: 'Open Sans';
     font-size: 69%;
     font-weight: 600;
-    color: #0FC97C;
-    background-color: #D3FAEA;
     padding: 5px 20px;
     border-radius: 6px;
     margin-left: 30px;
+}
+
+.gecilebilir {
+    color: #0FC97C;
+    background-color: #D3FAEA;
+}
+
+.gecilemez {
+    color: #C90F0F;
+    background-color: #FAD3D3;
 }
 
 .table .fa-times-circle {
