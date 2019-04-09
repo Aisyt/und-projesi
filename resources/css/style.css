@@ -28,6 +28,12 @@ body {
     outline: none;
 }
 
+input:-internal-autofill-selected {
+    background-color: unset !important;
+    background-image: none !important;
+    color: #8692C2 !important;
+}
+
 /* --------------- HEADINGS ---------------- */
 
 h1 {
