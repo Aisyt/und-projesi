@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,18 +30,23 @@
             <a class="und_btn und_btn-source" href="#">Kaynak: TOBB - GEBOS Sistemi</a>
         </div>
         <div class="container_search-countries">
-            <div class="search-flex">
+            <form class="search-flex">
                 <div class="search-nereden">
                     <label class="label-nereye">Nereden</label>
                     <i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i>
-                    <input class="search-country" type="search" placeholder="ülke adı girin">
+                    <input name="ilk-ulke" class="search-country" type="search" placeholder="ülke adı girin">
                 </div>
                 <div class="search-nereye">
                     <label class="label-nereye">Nereye</label>
                     <i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i>
-                    <input class="search-country" type="search" placeholder="ülke adı girin">
+                    <input name="son-ulke" class="search-country" type="search" placeholder="ülke adı girin">
                 </div>
-            </div>
+                <div id="submit-bg">
+                    <button type='submit' id='submit' name='submit'>
+                        Ara
+                    </button>
+                </div>
+            </form>
         </div>
 
     </header>

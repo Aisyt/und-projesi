@@ -176,7 +176,7 @@ header {
 	justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    width: 600px;
+    width: 800px;
 }
 
 .search-flex div {
@@ -184,7 +184,7 @@ header {
     border: none;
     border-radius: 6px;
     padding: 0px;
-    width: 48%;
+    width: 30%;
     color:#8692C2;
     font-size: 89%;
     position: relative;
@@ -194,6 +194,30 @@ header {
 	justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+}
+
+#submit {
+    border: 0px solid transparent;
+    background-color: transparent;
+}
+
+#submit {
+    position: unset;
+    left: 0;
+    font-size: 130%;
+    height: 100%;
+    background-color: #19328E;
+    padding: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+#submit-bg {
+    background-color: transparent;
+    margin-right: 5px;
 }
 
 .search-country {
@@ -328,7 +352,7 @@ header {
 /*   MEDIA QUERIES  */
 /* -------------------------------------- */
 
-/* Big tablet to 1200px(widths smallet than the 1140px row */
+/* Big tablet to 1440px(widths smallet than the 1440px row */
 @media only screen and (max-width: 1439px) {
     .hero-text-box {
         width: 100%;
@@ -352,9 +376,14 @@ header {
         font-size: 130%;
     }
 
+    #submit {
+        padding: 15px;
+    }
+
+
     /* search div */
     .search-flex div {
-        width: 48%;
+        width: 30%;
         font-size: 89%;
     }
 
@@ -366,7 +395,7 @@ header {
     body { font-size: 16px; }
 
     .search-flex {
-        width: 500px;
+        width: 600px;
     }
 
     .container_search-countries {
@@ -383,8 +412,16 @@ header {
 
     /* search div */
     .search-flex div {
-        width: 48%;
+        width: 30%;
         font-size: 89%;
+    }
+
+    #submit {
+        padding: 15px;
+    }
+
+    #submit-bg {
+        margin-right: 30px;
     }
 
 }
@@ -461,7 +498,7 @@ header {
 
     /* search div */
     .search-flex div {
-        width: 48%;
+        width: 50%;
         font-size: 89%;
         margin-top: 40px;
     }
@@ -480,6 +517,15 @@ header {
 
     .und_table-container {
         margin-top: 0px;
+    }
+
+    #submit {
+
+    }
+
+    #submit-bg {
+        margin-top: 15px;
+        margin-right: 0;
     }
 
 }
